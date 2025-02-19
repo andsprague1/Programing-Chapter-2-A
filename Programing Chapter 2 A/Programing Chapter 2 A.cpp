@@ -2,10 +2,22 @@
 //
 
 #include <iostream>
-
+#include<iomanip>;
+using namespace std;
 int main()
 {
-    std::cout << "Hello World!\n";
+	/*
+	1. We want to get the number of square feet
+	2. we want to calculate how many acres it is 
+	3. we want to output that.
+	*/
+	double sqFeet, totalAcres;
+	cout << "How many square feet do you have?";
+	cin >> sqFeet;
+	totalAcres = sqFeet / 43560;
+
+	cout <<showpoint << "The number of Acres is:" << totalAcres;
+	return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
